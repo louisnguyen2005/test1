@@ -1,0 +1,17 @@
+
+article{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+.checksize img{
+    width: 200px;
+    height: 150px;
+
+    margin-bottom: 50px;
+}
+
+
+
+
