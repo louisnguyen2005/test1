@@ -1,11 +1,15 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+
 }
 
 html, body {
   height: 100%;
+  
+}
+main{
+  overflow: hidden;
 }
 
 .navigation{
@@ -270,9 +274,10 @@ main{
 .left-banner { 
   background-color: #e31837;
   width: 100%;
-  max-width: 300px; 
-  padding: 20px;
-  border-radius: 8px; 
+  margin-top: 2.85rem;
+  max-height: 43rem;
+  padding: 1.5rem;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -299,15 +304,21 @@ main{
 
 .products {
   display: flex;
-  flex-direction: column; /* Sắp xếp các section theo chiều dọc */
-  width: 78%;
+  flex-direction: column; 
   padding: 0 1.5vw 0 0;
+}
+
+.best-sell{
+  margin-bottom: 4rem;
+}
+.hot-sell{
+  margin:5px;
 }
 
 .best-sell, .hot-sell {
   display: flex;
   flex-direction: column; 
-  margin-bottom: 2rem; 
+  width: 75vw;
 }
 
 .best-sell .name-class, .hot-sell .name-class{
@@ -315,48 +326,151 @@ main{
  margin-bottom: 1vh;
 }
 
-{
-  text-align: center;
-  margin-bottom: 1rem; 
-}
-
-.pro-of-best, .pro-of-hot {
-  display: flex;
-  flex-direction: row; 
-  justify-content: space-between; 
-  flex-wrap: wrap; 
-}
-
-.pro-1 {
+.product {
   border: 2px solid rgb(233, 42, 42);
-  width: 22%; 
+  width: 500px; 
   transition: color 0.4s, background-color 0.2s;
   box-shadow: 2px 2px 8px rgb(199, 30, 11);
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
-.pro-1 img {
+.product img {
   width: 150px; 
   height: 150px;
   object-fit: cover;
 }
 
-.pro-1-detail {
+.product-detail {
   padding: 1vh 0; 
 }
 
-.add {
-  background-color: rgb(233, 42, 42);
-  color: #fff;
-  padding: 0.5rem;
-  cursor: pointer;
 
-}
 
 .add:hover {
   background-color: rgb(199, 30, 11);
 }
 
+.product img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.product-detail {
+  padding: 10px 0;
+}
+
+.add {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 50%;
+  text-align: center;
+  margin: 10px auto;
+}
 
 
+.pro-of-best .product, .pro-of-hot .product{
+  width: calc(100% /4);
+  margin-left: 15px;
+}
+
+
+
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.button i{
+  font-size: medium;
+margin-left: 1rem;
+}
+
+.button i:hover{
+  background-color: aqua;
+}
+
+ /* Custom styling for the dots (this one has had when we used a customPaging in jquery*/
+ .slick-dots {
+  text-align: center;
+  bottom: -40px !important;
+  margin: 10px 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots li i {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.slick-dots li.slick-active i {
+  color: #333;
+}
+
+
+/* NEWS */
+
+  .news{
+    margin-top: 2rem;
+  text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
+    background-attachment: fixed;  /* Keeps the background fixed when scrolling */
+    background-image: url('./components/assets/backgrNews.jpg');
+  }
+
+  .check{
+    background-color: #b9df2e;
+    margin-left: 1rem;
+    border-radius: 1rem;
+  }
+
+  .check .img-of-check img{
+   width: 100%;
+   height: 12rem;
+  }
+
+
+
+  .news h1 {
+    display: inline-block;  
+    margin: 1rem 0;
+    border: 2px solid greenyellow;
+    padding: 1rem; 
+    background-color: aqua;
+    border-radius: 2rem;
+}
+
+
+
+  .check h2{
+    height: 2rem;
+  }
+
+  .check p{
+    padding: 3vh 0;
+  }
+
+  .contain-a {
+    margin-bottom: 1rem;
+  }
+
+  .contain-a a{
+   border-radius: 0.5rem;
+    text-transform: uppercase;
+    text-decoration: none; 
+    color: #fff;
+    border: 2px solid red;
+    background-color: #e31837;
+    padding: 0.5rem 0;
+  }
