@@ -31,317 +31,428 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   </head>
   <body>
-    <header>
-      <div class="navigation">
-        <div class="above-nav">
-          <img src="./components/assets/logo.png" />
-          <div class="hero-section">
-            <div class="slogan">
-              <h1><b>brings you the best</b></h1>
+    <div class="content-wrapper">
+      <header>
+        <div class="navigation">
+          <div class="above-nav">
+            <img src="./components/assets/logo.png" />
+            <div class="hero-section">
+              <div class="slogan">
+                <h1><b>brings you the best</b></h1>
+              </div>
+            </div>
+
+            <span class="right-icons">
+              <div class="user-auth">
+                <a href="#">Register</a>
+
+                <i class="fa fa-user-circle"></i>
+
+                <a href="#">Log-in</a>
+              </div>
+
+              <div class="cart">
+                <i class="fa fa-shopping-cart"></i>
+              </div>
+            </span>
+          </div>
+          <div class="main-nav">
+            <span class="below-nav">
+              <div class="compo">
+                <a href="#" target="" title=""> Trang chủ </a>
+
+                <a href="#" target="" title=""> Giới thiệu </a>
+
+                <a href="#" target="" title=""> Sản phẩm </a>
+
+                <a href="#" target="" title=""> Tin tức </a>
+              </div>
+
+              <div class="input">
+                <input type="text" value="" placeholder="Enter your products" />
+                <i class="fa fa-search"></i>
+              </div>
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <!-- THIS IS A BANNER  -->
+      <div class="banner">
+        <img src="./components/assets/bgimg.jpg" alt="" id="banner" />
+      </div>
+
+      <main>
+        <div class="menu">
+          <div class="left-banner">
+            <img src="./components/assets/logo.png" alt="" />
+            <div class="intro">
+              <p class="title">HÔM NAY ĂN GÌ!</p>
+              <p class="content">
+                Thực đơn của chúng tôi rất phong phú và mang lại cho bạn những
+                điều tốt nhất cho sức khỏe của bạn.
+              </p>
+            </div>
+
+            <div class="container-time">
+              <div id="set-day"></div>
+              <div class="icon" id="weather-icon"></div>
+              <div id="set-hour"></div>
+            </div>
+            <div class="container-pets">
+              <img src="./components/assets/tiger.png" alt="" />
+              <img src="./components/assets/bee.png" alt="" />
+              <img src="./components/assets/elephant.png" alt="" />
+              <img src="./components/assets/dinosaur.png" alt="" />
+              <img src="./components/assets/bird.png" alt="" />
             </div>
           </div>
-
-          <span class="right-icons">
-            <div class="user-auth">
-              <a href="#">Register</a>
-
-              <i class="fa fa-user-circle"></i>
-
-              <a href="#">Log-in</a>
+          <div class="products">
+            <div class="best-sell">
+              <div class="name-class">
+                <h1>Best Seller</h1>
+              </div>
+              <div class="pro-of-best">
+                <div class="product">
+                  <img src="./components/assets/chicken.jpg" alt="" />
+                  <div class="product-detail">
+                    <strong class="name">Chicken</strong>
+                    <div class="value">
+                      <span class="sale-off">99K</span> 79K
+                    </div>
+                    <div class="add">Thêm ngay</div>
+                  </div>
+                </div>
+                <div class="product">
+                  <img src="./components/assets/mitq.jpg" alt="" />
+                  <div class="product-detail">
+                    <strong class="name">Noodles</strong>
+                    <div class="value">68K</div>
+                    <div class="add">Thêm ngay</div>
+                  </div>
+                </div>
+                <div class="product">
+                  <img src="./components/assets/muc.jpg" alt="" />
+                  <div class="product-detail">
+                    <strong class="name">Squid</strong>
+                    <div class="value">
+                      <span class="sale-off">157K</span> 123K
+                    </div>
+                    <div class="add">Thêm ngay</div>
+                  </div>
+                </div>
+                <div class="product">
+                  <img src="./components/assets/banhmi.jpg" alt="Hamburger" />
+                  <div class="product-detail">
+                    <strong class="name">Bread</strong>
+                    <div class="value">
+                      <span class="sale-off">60K</span> 49K
+                    </div>
+                    <div class="add">Thêm ngay</div>
+                  </div>
+                </div>
+                <div class="product">
+                  <img src="./components/assets/bo.jpg" alt="Hamburger" />
+                  <div class="product-detail">
+                    <strong class="name">Steak</strong>
+                    <div class="value">
+                      <span class="sale-off">450K</span> 389K
+                    </div>
+                    <div class="add">Thêm ngay</div>
+                  </div>
+                </div>
+                <div class="product">
+                  <img src="./components/assets/bone.jpg" alt="Hamburger" />
+                  <div class="product-detail">
+                    <strong class="name">Cown</strong>
+                    <div class="value">
+                      <span class="sale-off">388K</span> 299K
+                    </div>
+                    <div class="add">Thêm ngay</div>
+                  </div>
+                </div>
+                <div class="product">
+                  <img src="./components/assets/chaca.jpg" alt="Hamburger" />
+                  <div class="product-detail">
+                    <strong class="name">Korean</strong>
+                    <div class="value">
+                      <span class="sale-off">98K</span> 78K
+                    </div>
+                    <div class="add">Thêm ngay</div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div class="cart">
-              <i class="fa fa-shopping-cart"></i>
+            <div class="hot-sell">
+              <div class="name-class">
+                <h1>Hot Seller</h1>
+              </div>
+              <div class="pro-of-hot">
+                <div class="product">
+                  <img src="./components/assets/comsuon.jpeg" alt="Hamburger" />
+                  <div class="product-detail">
+                    <strong class="name">Com suon</strong>
+                    <div class="value">
+                      <span class="sale-off">95K</span> 79K
+                    </div>
+                    <div class="add">Thêm ngay</div>
+                  </div>
+                </div>
+                <div class="product">
+                  <img src="./components/assets/france1.jpg" alt="Hamburger" />
+                  <div class="product-detail">
+                    <strong class="name">France</strong>
+                    <div class="value">
+                      <span class="sale-off">250K</span> 199K
+                    </div>
+                    <div class="add">Thêm ngay</div>
+                  </div>
+                </div>
+                <div class="product">
+                  <img src="./components/assets/kem.jpg" alt="Hamburger" />
+                  <div class="product-detail">
+                    <strong class="name">Ice cream</strong>
+                    <div class="value">
+                      <span class="sale-off">49K</span> FREE(Just Today)
+                    </div>
+                    <div class="add">Thêm ngay</div>
+                  </div>
+                </div>
+                <div class="product">
+                  <img src="./components/assets/sushi.png" alt="Hamburger" />
+                  <div class="product-detail">
+                    <strong class="name">Shushi</strong>
+                    <div class="value">
+                      <span class="sale-off">300K</span> 219K
+                    </div>
+                    <div class="add">Thêm ngay</div>
+                  </div>
+                </div>
+                <div class="product">
+                  <img src="./components/assets/trấu.webp" alt="Hamburger" />
+                  <div class="product-detail">
+                    <strong class="name">Milk Tea</strong>
+                    <div class="value">
+                      <span class="sale-off">50K</span> 39K
+                    </div>
+                    <div class="add">Thêm ngay</div>
+                  </div>
+                </div>
+                <div class="product">
+                  <img src="./components/assets/lobster.jpg" alt="Hamburger" />
+                  <div class="product-detail">
+                    <strong class="name">Lobster</strong>
+                    <div class="value">
+                      <span class="sale-off">1050K</span> 999K
+                    </div>
+                    <div class="add">Thêm ngay</div>
+                  </div>
+                </div>
+                <div class="product">
+                  <img src="./components/assets/miy.jpeg" alt="Hamburger" />
+                  <div class="product-detail">
+                    <strong class="name">Pasta</strong>
+                    <div class="value">
+                      <span class="sale-off">88K</span> 69K
+                    </div>
+                    <div class="add">Thêm ngay</div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </span>
+          </div>
         </div>
-        <div class="main-nav">
-          <span class="below-nav">
-            <div class="compo">
-              <a href="#" target="" title=""> Trang chủ </a>
+        <div class="news">
+          <h1>NEWS</h1>
+          <article>
+            <div class="check">
+              <h3>RAU QUẢ VÔ CÙNG CẦN THIẾT!</h3>
+              <div class="img-of-check">
+                <img src="./components/assets/vegetables.webp" />
+              </div>
 
-              <a href="#" target="" title=""> Giới thiệu </a>
-
-              <a href="#" target="" title=""> Sản phẩm </a>
-
-              <a href="#" target="" title=""> Tin tức </a>
+              <p>
+                Rau quả còn cung cấp chất xơ giúp ích cho hệ tiêu hóa, ổn định
+                hệ vi khuẩn đường ruột, chống táo bón, góp phần bình ổn đường
+                máu, giảm cholesterol. Chế độ ăn nhiều rau quả sẽ giúp giảm nguy
+                cơ tim mạch, đột quỵ, béo phì, sỏi thận, một số loại ung thư,
+                đái tháo đường túyp 2 và các rối loạn về xương.Bên cạnh hương vị
+                ngon, là nguồn thực phẩm lành mạnh, dễ tìm kiếm trong đời sống
+                hàng ngày.
+              </p>
+              <div class="contain-a">
+                <a
+                  href="https://dantri.com.vn/suc-khoe/loi-ich-cua-viec-an-rau-qua-20220921072745585.htm"
+                  >Xem chi tiet</a
+                >
+              </div>
             </div>
 
-            <div class="input">
-              <input type="text" value="" placeholder="Enter your products" />
-              <i class="fa fa-search"></i>
+            <div class="check">
+              <h3>GIA VỊ MANG LẠI NHÌU MÓN NGON!</h3>
+              <div class="img-of-check">
+                <img src="./components/assets/spice.jpg" />
+              </div>
+
+              <p>
+                Các loại gia vị rất quan trọng để nêm, định vị món ăn, làm gia
+                tăng hương vị, mùi vị (dậy mùi), màu sắc hấp dẫn kích thích tiêu
+                hóa, làm món ăn thêm sinh động, hấp dẫn lôi cuốn người thưởng
+                thức. Một số loại gia vị còn được sử dụng với mục đích chế biến
+                món ăn theo nguyên lý đông y, là thành phần quan trọng để tạo
+                nên những món ăn,tương sinh và tương khắc (món ăn gây lạnh bụng,
+                hàn đi kèm với gia vị cay, nóng).
+              </p>
+              <div class="contain-a">
+                <a
+                  href="https://laodong.vn/suc-khoe/chuyen-gia-chi-ro-tac-dung-tuyet-voi-cua-gia-vi-va-cach-su-dung-tot-nhat-930899.ldo"
+                  >Xem chi tiet</a
+                >
+              </div>
             </div>
-          </span>
+
+            <div class="check">
+              <h3>SỮA CẦN THIẾT CHO CƠ THỂ...</h3>
+              <div class="img-of-check">
+                <img src="./components/assets/milk.jpg" />
+              </div>
+
+              <p>
+                Uống sữa thường xuyên có thể giúp duy trì cân nặng hợp lý. Dung
+                nạp protein, chất béo mang lại cảm giác no, có thể giúp giảm cân
+                và sữa rất ngon khi ta uống đúng cách. Tăng cường miễn dịch và
+                khả năng chống bệnh tự nhiên của cơ thể. Các loại ung thư như
+                ung thư dạ dày, ung thư gan, ung thư vú,... đều có chỉ số giảm
+                khi bạn bổ sung sữa tươi và các chế phẩm từ sữa thường xuyên.
+              </p>
+
+              <div class="contain-a">
+                <a
+                  href="https://vnexpress.net/loi-ich-khi-uong-sua-moi-ngay-4499160.html"
+                  >Xem chi tiet</a
+                >
+              </div>
+            </div>
+
+            <div class="check">
+              <h3>MUA SẮM THÔNG MINH</h3>
+              <div class="img-of-check">
+                <img src="./components/assets/smartshooping.jpg" />
+              </div>
+
+              <p>
+                Mùa hè thường được xem là khoảng thời gian “nuốt” tiền của bạn
+                nhiều nhất trong năm. Những cơn lốc mua sắm, những chuyến du
+                lịch dài hơi hay các chi phí hóa đơn tăng cao khiến bạn dễ dàng
+                rơi vào tình huống éo le “tiền đến tiền đi” trong chớp mắt. Vậy
+                làm thế nào để chi tiêu hiệu quả? Thử ngay các tips Timo gợi ý
+                dưới đây để mùa hè của bạn thêm trọn vẹn nhé! Menu Xem nhanh
+              </p>
+              <div class="contain-a">
+                <a href="#">Xem chi tiet</a>
+              </div>
+            </div>
+          </article>
         </div>
-      </div>
-    </header>
+      </main>
 
-    <!-- THIS IS A BANNER  -->
-    <div class="banner">
-      <img src="./components/assets/bgimg.jpg" alt="" id="banner" />
+      <footer>
+        <div class="main-contents">
+          <div class="logo-infooter">
+            <img src="./components/assets/logo.png" alt="" />
+          </div>
+          <div class="first-content">
+            <h2>CÔNG TY 3 THÀNH VIÊN FLAVORFOOD</h2>
+            <p>
+              Địa chỉ: Tầng 15, Khách sạn Mường Thanh Luxury Cần Thơ, Cái Khế,
+              Ninh Kiều, Cần Thơ.
+            </p>
+            <p>Điện thoại: (035) 27542781</p>
+            <p>Tổng đài: 1900-1199 Mã số thuế: 098002383</p>
+            <p>Ngày cấp: 1/10/2024</p>
+            <p>
+              Nơi cấp: Cục Thuế Hồ Chí Minh Hộp thư góp ý:abc@flavorfood.com.vn
+            </p>
+          </div>
+
+          <div class="second-content">
+            <div class="order">
+              <img src="./components/assets/contact.png" alt="" />
+            </div>
+            <p>Liên hệ</p>
+            <p>Chính sách và quy định chung</p>
+            <p>Chính sách thanh toán khi đặt hàng</p>
+            <p>Chính sách hoạt động</p>
+            <p>Thông tin vận chuyển và giao nhận</p>
+            <p>Chính sách hoạt động</p>
+            <p>Chính sách bảo mật thông tin</p>
+            <p>Thông tin đăng ký giao dịch chung</p>
+            <p>Hướng dẫn đặt phần ăn</p>
+          </div>
+
+          <div class="third-content">
+            <h3>HÃY KẾT NỐI VỚI CHÚNG TÔI</h3>
+            <p>
+              <i class="fa fa-facebook-official" aria-hidden="true"></i>
+              Facebook
+            </p>
+            <p><i class="fa fa-envelope-o" aria-hidden="true"></i> Email</p>
+
+            <div class="anh1">
+              <img src="./components/assets/anh1.png" />
+            </div>
+            <div class="draw"></div>
+            <div class="mix-logo">
+              <h3>TẢI ỨNG DỤNG ĐẶT HÀNG VỚI NHIỀU ƯU ĐÃI HƠN</h3>
+              <img src="./components/assets/google.png" alt="" />
+              <img src="./components/assets/appstore.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="last-footer">
+          <p><b>© 2024 FlavorFood Viet Nam</b></p>
+        </div>
+      </footer>
     </div>
 
-    <main>
-      <div class="menu">
-        <div class="left-banner">
-          <img src="./components/assets/logo.png" alt="" />
-          <div class="intro">
-            <p class="title">HÔM NAY ĂN GÌ!</p>
-            <p class="content">
-              Thực đơn của chúng tôi rất phong phú và mang lại cho bạn những
-              điều tốt nhất cho sức khỏe của bạn.
-            </p>
-          </div>
-
-          <div class="container-time">
-            <div id="set-day"></div>
-            <div class="icon" id="weather-icon"></div>
-            <div id="set-hour"></div>
-          </div>
+    <!-- TOAST -->
+    <div class="toast toast-success">
+      <div class="toast-content">
+        <div class="chickenicon">
+          <img src="./components/assets/chickenicon.png" alt="" />
         </div>
-        <div class="products">
-          <div class="best-sell">
-            <div class="name-class">
-              <h1>Best Seller</h1>
-            </div>
-            <div class="pro-of-best">
-              <div class="product">
-                <img src="./components/assets/humburger.jpg" alt="Hamburger" />
-                <div class="product-detail">
-                  <strong class="name">Hamburger</strong>
-                  <div class="value">200K</div>
-                  <div class="add">Thêm ngay</div>
-                </div>
-              </div>
-              <div class="product">
-                <img src="./components/assets/humburger.jpg" alt="Hamburger" />
-                <div class="product-detail">
-                  <strong class="name">Hamburger</strong>
-                  <div class="value">200K</div>
-                  <div class="add">Thêm ngay</div>
-                </div>
-              </div>
-              <div class="product">
-                <img src="./components/assets/humburger.jpg" alt="Hamburger" />
-                <div class="product-detail">
-                  <strong class="name">Hamburger</strong>
-                  <div class="value">200K</div>
-                  <div class="add">Thêm ngay</div>
-                </div>
-              </div>
-              <div class="product">
-                <img src="./components/assets/humburger.jpg" alt="Hamburger" />
-                <div class="product-detail">
-                  <strong class="name">Hamburger</strong>
-                  <div class="value">200K</div>
-                  <div class="add">Thêm ngay</div>
-                </div>
-              </div>
-              <div class="product">
-                <img src="./components/assets/humburger.jpg" alt="Hamburger" />
-                <div class="product-detail">
-                  <strong class="name">Hamburger</strong>
-                  <div class="value">200K</div>
-                  <div class="add">Thêm ngay</div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="hot-sell">
-            <div class="name-class">
-              <h1>Hot Seller</h1>
-            </div>
-            <div class="pro-of-hot">
-              <div class="product">
-                <img src="./components/assets/humburger.jpg" alt="Hamburger" />
-                <div class="product-detail">
-                  <strong class="name">Hamburger</strong>
-                  <div class="value">200K</div>
-                  <div class="add">Thêm ngay</div>
-                </div>
-              </div>
-              <div class="product">
-                <img src="./components/assets/humburger.jpg" alt="Hamburger" />
-                <div class="product-detail">
-                  <strong class="name">Hamburger</strong>
-                  <div class="value">200K</div>
-                  <div class="add">Thêm ngay</div>
-                </div>
-              </div>
-              <div class="product">
-                <img src="./components/assets/humburger.jpg" alt="Hamburger" />
-                <div class="product-detail">
-                  <strong class="name">Hamburger</strong>
-                  <div class="value">200K</div>
-                  <div class="add">Thêm ngay</div>
-                </div>
-              </div>
-              <div class="product">
-                <img src="./components/assets/humburger.jpg" alt="Hamburger" />
-                <div class="product-detail">
-                  <strong class="name">Hamburger</strong>
-                  <div class="value">200K</div>
-                  <div class="add">Thêm ngay</div>
-                </div>
-              </div>
-              <div class="product">
-                <img src="./components/assets/humburger.jpg" alt="Hamburger" />
-                <div class="product-detail">
-                  <strong class="name">Hamburger</strong>
-                  <div class="value">200K</div>
-                  <div class="add">Thêm ngay</div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="message">
+          <span class="text text-1">Good morning</span>
+          <span class="text text-2">
+            Thanks for your concern about us
+            <span class="pengui">
+              <img src="./components/assets/pengui.png" alt=""
+            /></span>
+          </span>
         </div>
+        <i class="fa-solid fa-x" id="closeToast"></i>
+        <div class="propress"></div>
       </div>
-      <div class="news">
-        <h1>NEWS</h1>
-        <article>
-          <div class="check">
-            <h2>CONG DUNG MANGO...!</h2>
-            <div class="img-of-check">
-              <img src="./components/assets/banner8.webp" />
-            </div>
-
-            <p>
-              Sữa chua là một trong những thực phẩm lên men tốt cho hệ tiêu hóa.
-              Sữa chua cung cấp cho cơ thể một lượng lớn lợi khuẩn có tác dụng
-              thúc đẩy tiêu hóa và con bo abbbaaaa >
-            </p>
-            <div class="contain-a">
-              <a href="#">Xem chi tiet</a>
-            </div>
-          </div>
-
-          <div class="check">
-            <h2>CONG DUNG MANGO...!</h2>
-            <div class="img-of-check">
-              <img src="./components/assets/banner1.jpg" />
-            </div>
-
-            <p>
-              Sữa chua là một trong những thực phẩm lên men tốt cho hệ tiêu hóa.
-              Sữa chua cung cấp cho cơ thể một lượng lớn lợi khuẩn có tác dụng
-              thúc đẩy tiêu hóa
-            </p>
-            <div class="contain-a">
-              <a href="#">Xem chi tiet</a>
-            </div>
-          </div>
-
-          <div class="check">
-            <h2>CONG DUNG MANGO...!</h2>
-            <div class="img-of-check">
-              <img src="./components/assets/banner5.jpg" />
-            </div>
-
-            <p>
-              Sữa chua là một trong những thực phẩm lên men tốt cho hệ tiêu hóa.
-              Sữa chua cung cấp cho cơ thể một lượng lớn lợi khuẩn có tác dụng
-              thúc đẩy tiêu hóa
-            </p>
-
-            <div class="contain-a">
-              <a href="#">Xem chi tiet</a>
-            </div>
-          </div>
-
-          <div class="check">
-            <h2>CONG DUNG MANGO...!</h2>
-            <div class="img-of-check">
-              <img src="./components/assets/banner7.jpg" />
-            </div>
-
-            <p>
-              Sữa chua là một trong những thực phẩm lên men tốt cho hệ tiêu hóa.
-              Sữa chua cung cấp cho cơ thể một lượng lớn lợi khuẩn có tác dụng
-              thúc đẩy tiêu hóa
-            </p>
-            <div class="contain-a">
-              <a href="#">Xem chi tiet</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </main>
-
-    <footer>
-      <div class="main-contents">
-        <div class="logo-infooter">
-          <img src="./components/assets/logo.png" alt="" />
-        </div>
-        <div class="first-content">
-          <h2>CÔNG TY 3 THÀNH VIÊN FLAVORFOOD</h2>
-          <p>
-            Địa chỉ: Tầng 15, Khách sạn Mường Thanh Luxury Cần Thơ, Cái Khế,
-            Ninh Kiều, Cần Thơ.
-          </p>
-          <p>Điện thoại: (035) 27542781</p>
-          <p>Tổng đài: 1900-1199 Mã số thuế: 098002383</p>
-          <p>Ngày cấp: 1/10/2024</p>
-          <p>
-            Nơi cấp: Cục Thuế Hồ Chí Minh Hộp thư góp ý:abc@flavorfood.com.vn
-          </p>
-        </div>
-
-        <div class="second-content">
-          <div class="order">
-            <img src="./components/assets/contact.png" alt="" />
-          </div>
-          <p>Liên hệ</p>
-          <p>Chính sách và quy định chung</p>
-          <p>Chính sách thanh toán khi đặt hàng</p>
-          <p>Chính sách hoạt động</p>
-          <p>Thông tin vận chuyển và giao nhận</p>
-          <p>Chính sách hoạt động</p>
-          <p>Chính sách bảo mật thông tin</p>
-          <p>Thông tin đăng ký giao dịch chung</p>
-          <p>Hướng dẫn đặt phần ăn</p>
-        </div>
-
-        <div class="third-content">
-          <h3>HÃY KẾT NỐI VỚI CHÚNG TÔI</h3>
-          <p>
-            <i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook
-          </p>
-          <p><i class="fa fa-envelope-o" aria-hidden="true"></i> Email</p>
-
-          <div class="anh1">
-            <img src="./components/assets/anh1.png" />
-          </div>
-          <div class="draw"></div>
-          <div class="mix-logo">
-            <h3>TẢI ỨNG DỤNG ĐẶT HÀNG VỚI NHIỀU ƯU ĐÃI HƠN</h3>
-            <img src="./components/assets/google.png" alt="" />
-            <img src="./components/assets/appstore.png" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="last-footer">
-        <p><b>© 2024 FlavorFood Viet Nam</b></p>
-      </div>
-    </footer>
+    </div>
     <script>
-      let index__banner = 1;
-      const changeImage = () => {
-        let imgs = [
-          "./components/assets/bgimg.jpg",
-          "./components/assets/banner5.jpg",
-          "./components/assets/banner6.jpg",
-          "./components/assets/banner7.jpg",
-          "./components/assets/banner8.webp",
-        ];
-        document.getElementById("banner").src = imgs[index__banner];
-        index__banner++;
-        if (index__banner == 5) {
-          index__banner = 0;
-        }
-      };
-      setInterval(changeImage, 6000);
+      $(document).ready(function () {
+        $(".toast").addClass("active");
+        $(".content-wrapper").addClass("blurred");
 
+        setTimeout(() => {
+          $(".toast").removeClass("active");
+          $(".content-wrapper").removeClass("blurred");
+        }, 6000);
+
+        $("#closeToast").click(function () {
+          $(".toast").removeClass("active");
+          $(".content-wrapper").removeClass("blurred");
+        });
+      });
+    </script>
+    <script>
       $(document).ready(function () {
         $(".pro-of-best, .pro-of-hot").slick({
           slidesToShow: 4,
@@ -350,7 +461,8 @@
           infinite: true,
           arrows: false,
           autoplay: true,
-          autoplaySpeed: 3000,
+          autoplaySpeed: 4000,
+          speed: 1450,
           customPaging: function (slider, i) {
             return '<i class="fas fa-circle"></i>';
           },

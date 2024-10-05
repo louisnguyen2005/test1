@@ -73,7 +73,7 @@ main{
 
 .user-auth a {
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
     box-shadow: 
         0 0 3px 0 #00000066,
         0 0 2px 0 #0000004d;
@@ -120,7 +120,7 @@ main{
 
 .main-nav .compo a {
     text-decoration: none; 
-    color: #000;
+    color: #ffffff;
     display: inline-block;
     padding: 10px 20px;
     transition: color 0.4s, background-color 0.2s;
@@ -265,6 +265,9 @@ main{
   display: flex;
   justify-content: space-between; 
 }
+
+
+/* LEFT-BANNER */
 .left-banner img{
   width: 18rem;
     height: 14rem;
@@ -275,8 +278,8 @@ main{
   background-color: #e31837;
   width: 100%;
   margin-top: 2.85rem;
-  max-height: 43rem;
-  padding: 1.5rem;
+  max-height: 48.5rem;
+  padding: 0.3rem;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -284,7 +287,17 @@ main{
   text-align: center;
 }
 
+.container-pets{
+  display: flex;
+  margin-top: 9vh;
+}
 
+
+.container-pets img{
+  padding: 0.6rem;
+  width: 3rem;
+  height: 3rem;
+}
 .intro .title {
   font-size: 2rem; 
   font-family: 'MergeBlack', sans-serif;
@@ -299,7 +312,7 @@ main{
   line-height: 1.5;
 }
 
-
+  
 /* PRODUCTIONS */
 
 .products {
@@ -307,7 +320,15 @@ main{
   flex-direction: column; 
   padding: 0 1.5vw 0 0;
 }
+.sale-off {
+  text-decoration: line-through;
+  color: red; /* Optional: You can add a color to distinguish the sale price */
+}
 
+.value{
+  font-weight: bold;
+  color: rgb(24, 194, 183);
+}
 .best-sell{
   margin-bottom: 4rem;
 }
@@ -328,17 +349,17 @@ main{
 
 .product {
   border: 2px solid rgb(233, 42, 42);
-  width: 500px; 
-  transition: color 0.4s, background-color 0.2s;
-  box-shadow: 2px 2px 8px rgb(199, 30, 11);
+
+box-shadow:2px 2px 5px 1px #b9df2e;
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
 .product img {
-  width: 150px; 
-  height: 150px;
+  height: 11rem;
   object-fit: cover;
+  width: 100%;
+ 
 }
 
 .product-detail {
@@ -351,10 +372,6 @@ main{
   background-color: rgb(199, 30, 11);
 }
 
-.product img {
-  width: 100%;
-  border-radius: 5px;
-}
 
 .product-detail {
   padding: 10px 0;
@@ -373,8 +390,7 @@ main{
 
 
 .pro-of-best .product, .pro-of-hot .product{
-  width: calc(100% /4);
-  margin-left: 15px;
+  margin-left: 13px;
 }
 
 
@@ -433,6 +449,8 @@ margin-left: 1rem;
     background-color: #b9df2e;
     margin-left: 1rem;
     border-radius: 1rem;
+    max-width: 22rem;
+
   }
 
   .check .img-of-check img{
@@ -453,8 +471,10 @@ margin-left: 1rem;
 
 
 
-  .check h2{
+  .check h3{
+    margin-top: 1vh;
     height: 2rem;
+   
   }
 
   .check p{
@@ -463,6 +483,7 @@ margin-left: 1rem;
 
   .contain-a {
     margin-bottom: 1rem;
+    margin-top: auto;
   }
 
   .contain-a a{
@@ -501,10 +522,6 @@ margin-left: 1rem;
     color: rgb(74, 21, 49);
   }
 
-  .icon {
-    font-size: 2rem;
-    padding: 0.5rem;
-  }
   #set-hour {
     font-size: medium;
     font-weight: bold;
@@ -514,6 +531,93 @@ margin-left: 1rem;
   }
 
 
-  .sun{
-    color: #c83e08;
+  .sun img{
+width: 3.5rem;
+height: 3rem;
   }
+ 
+  .moon img{
+    width: 3.5rem;
+    height: 3rem;
+
+      }
+
+      /* FOR TOAST */
+
+
+      .blurred {
+        opacity: 0.3; 
+      }
+
+
+      .toast {
+        position: absolute;
+        top: 30px;
+        right: -40%;
+        background-color: rgb(243, 84, 27);
+        box-shadow: 0 6px 43px rgb(0 0 0 / 40%);
+        padding: 15px 20px;
+        overflow: hidden;
+        transition: all 1s;
+     
+      }
+      .toast.active {
+        right: 1%;
+      }
+      .toast-content {
+        display: flex;
+        align-items: center;
+      }
+   .toast-content .chickenicon img{
+    width: 3rem;
+    height: 3rem;
+   }
+      .message {
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+      }
+      .text {
+        font-size: 20px;
+      }
+      .text-1 {
+        font-weight: bold;
+        color: aqua;
+      }
+      .text-2 {
+        color: aliceblue;
+        margin-top: 10px;
+      }
+   
+      .text-2 .pengui img{
+        width: 3rem;
+        height: 3rem;
+       margin-top: 1rem;
+      }
+
+      #closeToast {
+        cursor: pointer;
+        font-size: 20px;
+        color: aliceblue;
+      }
+
+      .propress {
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        position: absolute;
+        background-color: #03db90;
+        box-shadow: 0 0 5px #aa06eb, 0 0 10px #7a09a6, 0 0 20px #7f03af,
+          0 0 30px #560477;
+      }
+
+      .toast.active .propress {
+        animation: progress 5s 1s linear;
+      }
+
+      @keyframes progress {
+        100% {
+          width: 100%;
+        }
+      }

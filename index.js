@@ -7,9 +7,10 @@ function updateDateTime() {
 
   /* Check if it's AM or PM and set the icon */
   let icon =
-    today.getHours() < 6 && today.getHours() > 18
-      ? `<div class="sun"><i class="fas fa-sun"></i></div>`
-      : `<div class="moon"><i class="fas fa-moon"></i></div>`;
+    today.getHours() > 18
+      ? `<div class="moon"><img src="./components/assets/moonst.png" alt="">
+</div>`
+      : `<div class="sun"><img src="./components/assets/sun.png" alt=""></div>`;
 
   let check = today.getHours() >= 12 ? "PM" : "AM";
 
@@ -47,3 +48,20 @@ function updateDateTime() {
 }
 
 setInterval(updateDateTime, 1000);
+
+let index__banner = 1;
+const changeImage = () => {
+  let imgs = [
+    "./components/assets/bgimg.jpg",
+    "./components/assets/banner5.jpg",
+    "./components/assets/banner6.jpg",
+    "./components/assets/banner7.jpg",
+    "./components/assets/banner8.webp",
+  ];
+  document.getElementById("banner").src = imgs[index__banner];
+  index__banner++;
+  if (index__banner == 5) {
+    index__banner = 0;
+  }
+};
+setInterval(changeImage, 6000);

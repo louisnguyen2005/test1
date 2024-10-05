@@ -5,100 +5,287 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <style>
-      .container-time {
-        width: 10rem;
-        height: 8rem;
-        border: 2px solid black;
-        padding: 0.5rem 0;
-        background-color: rgb(240, 203, 232);
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: rgb(161, 161, 21);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        font-family: "Times New Roman", Times, serif;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      .btn {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        outline: none;
+        background: #00caff;
+        border-radius: 5px;
+        font-size: 25px;
+        color: aliceblue;
+      }
+      .toast {
+        position: absolute;
+        top: 30px;
+        right: -40%;
+        background-color: rgb(124, 109, 109);
+        box-shadow: 0 6px 43px rgb(0 0 0 /40%);
+        padding: 15px 20px;
+        overflow: hidden;
+        transition: all 1s;
+      }
+      .toast.active {
+        right: 1%;
+      }
+      .toast-content {
+        display: flex;
+        align-items: center;
+      }
+      .toast-content i:nth-child(1) {
+        font-size: 30px;
+        color: rgb(68, 135, 211);
+      }
+      .message {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        border-radius: 10px;
+        margin: 0 20px;
       }
 
-      #set-day {
+      .text {
         font-size: 20px;
-        font-weight: 900;
-        padding: 0.5rem;
-        color: rgb(194, 68, 137);
       }
-
-      .icon {
-        font-size: 2rem;
-        padding: 0.5rem;
-      }
-      #set-hour {
-        font-size: medium;
+      .text-1 {
         font-weight: bold;
+        color: aqua;
+      }
+      .text-2 {
+        color: aliceblue;
+        margin-top: 10px;
+      }
 
-        text-decoration: double;
-        padding: 0.5rem;
+      #closeToast {
+        cursor: pointer;
+        font-size: 20px;
+        color: aliceblue;
+      }
+
+      .propress {
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        position: absolute;
+        background-color: #00caff;
+        box-shadow: 0 0 5px #00caff, 0 0 10px #00caff, 0 0 20px #00caff,
+          0 0 30px #00caff;
+      }
+
+      .toast.active .propress {
+        animation: progress 5s 1s linear;
+      }
+      @keyframes progress {
+        100% {
+          width: 100%;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="container-time">
-      <div id="set-day"></div>
-      <div class="icon" id="weather-icon"></div>
-      <div id="set-hour"></div>
+    <div class="toast toast-success">
+      <div class="toast-content">
+        <i class="fa-solid fa-circle-check"></i>
+        <div class="message">
+          <span class="text text-1">Success</span>
+          <span class="text text-2"
+            >Your change has been saved successfully</span
+          >
+        </div>
+        <i class="fa-solid fa-x" id="closeToast"></i>
+        <div class="propress"></div>
+      </div>
     </div>
-
+    <div class="buttons">
+      <button class="btn" id="success">Show toast Alert</button>
+    </div>
     <script>
-      function addZero(number) {
-        return number < 10 ? "0" + number : number;
-      }
+      $(document).ready(function () {
+        $("#success").click(function () {
+          $(".toast").addClass("active");
+          setTimeout(() => {
+            $(".toast").removeClass("active");
+          }, 5500);
+        });
 
-      function updateDateTime() {
-        let today = new Date();
-
-        /* Check if it's AM or PM and set the icon */
-        let icon =
-          today.getHours() < 6 || today.getHours() > 18
-            ? `<i class="fas fa-sun"></i>`
-            : `<i class="fas fa-moon"></i>`;
-
-        let check = today.getHours() >= 12 ? "PM" : "AM";
-
-        let time =
-          addZero(today.getHours()) +
-          ":" +
-          addZero(today.getMinutes()) +
-          ":" +
-          addZero(today.getSeconds()) +
-          " " +
-          check;
-
-        /* DATE */
-        let weekdays = [
-          "Sunday",
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-        ];
-        let date =
-          weekdays[today.getDay()] +
-          " " +
-          addZero(today.getDate()) +
-          "/" +
-          addZero(today.getMonth() + 1) +
-          "/" +
-          today.getFullYear();
-
-        document.getElementById("set-day").innerHTML = date;
-        document.getElementById("weather-icon").innerHTML = icon;
-        document.getElementById("set-hour").innerHTML = time;
-      }
-
-      setInterval(updateDateTime, 1000);
+        $("#closeToast").click(function () {
+          $(".toast").removeClass("active");
+        });
+      });
     </script>
   </body>
 </html> -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: rgb(161, 161, 21);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        font-family: "Times New Roman", Times, serif;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+
+      .content-wrapper {
+        z-index: 1;
+      }
+
+      .blurred {
+        opacity: 0.3; /* Mờ nội dung */
+      }
+
+      .btn {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        outline: none;
+        background: #00caff;
+        border-radius: 5px;
+        font-size: 25px;
+        color: aliceblue;
+      }
+      .toast {
+        position: absolute;
+        top: 30px;
+        right: -40%;
+        background-color: rgb(124, 109, 109);
+        box-shadow: 0 6px 43px rgb(0 0 0 / 40%);
+        padding: 15px 20px;
+        overflow: hidden;
+        transition: all 1s;
+        z-index: 999; /* Toast nằm trên nội dung */
+      }
+      .toast.active {
+        right: 1%;
+      }
+      .toast-content {
+        display: flex;
+        align-items: center;
+      }
+      .toast-content i:nth-child(1) {
+        font-size: 30px;
+        color: rgb(68, 135, 211);
+      }
+      .message {
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+      }
+      .text {
+        font-size: 20px;
+      }
+      .text-1 {
+        font-weight: bold;
+        color: aqua;
+      }
+      .text-2 {
+        color: aliceblue;
+        margin-top: 10px;
+      }
+
+      #closeToast {
+        cursor: pointer;
+        font-size: 20px;
+        color: aliceblue;
+      }
+
+      .propress {
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        position: absolute;
+        background-color: #00caff;
+        box-shadow: 0 0 5px #00caff, 0 0 10px #00caff, 0 0 20px #00caff,
+          0 0 30px #00caff;
+      }
+
+      .toast.active .propress {
+        animation: progress 5s 1s linear;
+      }
+
+      @keyframes progress {
+        100% {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <img src="./components/assets/bo.jpg" alt="" />
+    </div>
+
+    <div class="toast toast-success">
+      <div class="toast-content">
+        <i class="fa-solid fa-circle-check"></i>
+        <div class="message">
+          <span class="text text-1">Success</span>
+          <span class="text text-2"
+            >Your change has been saved successfully</span
+          >
+        </div>
+        <i class="fa-solid fa-x" id="closeToast"></i>
+        <div class="propress"></div>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        // Khi trang tải, hiển thị toast và làm mờ nội dung trang
+        $(".toast").addClass("active");
+        $(".content-wrapper").addClass("blurred");
+
+        // Sau 5.5 giây, toast biến mất và nội dung trang trở lại bình thường
+        setTimeout(() => {
+          $(".toast").removeClass("active");
+          $(".content-wrapper").removeClass("blurred");
+        }, 5500);
+
+        // Khi bấm nút close, ẩn toast và trả lại nội dung trang bình thường
+        $("#closeToast").click(function () {
+          $(".toast").removeClass("active");
+          $(".content-wrapper").removeClass("blurred");
+        });
+      });
+    </script>
+  </body>
+</html>
