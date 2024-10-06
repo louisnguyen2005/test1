@@ -4,7 +4,7 @@ function addZero(number) {
 
 function updateDateTime() {
   let today = new Date();
-
+  let good = today.getHours() > 18 ? "GOOD EVENING" : "GOOD MORNING";
   /* Check if it's AM or PM and set the icon */
   let icon =
     today.getHours() > 18
@@ -45,6 +45,7 @@ function updateDateTime() {
   document.getElementById("set-day").innerHTML = date;
   document.getElementById("weather-icon").innerHTML = icon;
   document.getElementById("set-hour").innerHTML = time;
+  document.getElementById("good").innerHTML = good;
 }
 
 setInterval(updateDateTime, 1000);

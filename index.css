@@ -553,16 +553,18 @@ height: 3rem;
       .toast {
         position: absolute;
         top: 30px;
-        right: -40%;
+       
         background-color: rgb(243, 84, 27);
         box-shadow: 0 6px 43px rgb(0 0 0 / 40%);
         padding: 15px 20px;
         overflow: hidden;
         transition: all 1s;
-     
+        transform: translateX(100%); 
+        opacity: 0; 
       }
       .toast.active {
-        right: 1%;
+        transform: translateX(0);
+        opacity: 1; 
       }
       .toast-content {
         display: flex;
