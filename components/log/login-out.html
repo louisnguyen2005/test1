@@ -1,0 +1,359 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="../../index.css" />
+    <link rel="stylesheet" href="./login-out.css" />
+    <link rel="icon" href="../assets/bgimg.jpg" type="image/png" />
+    <script src="./login-out.js"></script>
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Slick Slider CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  </head>
+  <body class="page">
+    <header class="page-header">
+      <div class="page-header-one">
+        <img src="../assets/logo.png" />
+
+        <div class="slogan">
+          <h1><b>brings you the best</b></h1>
+        </div>
+        <span class="right-icons">
+          <div class="open">
+            <div class="box" id="box">
+              <!-- Bird image is initially hidden -->
+              <img src="../assets/surprise.png" alt="Bird" id="bird" />
+              <img src="../assets/gift-bag.png" alt="Gift" id="giftImg" />
+            </div>
+
+            <div id="message">
+              <p>You have received a teddy bear from us!</p>
+              <img src="../assets/teddy-bear.png" alt="" />
+              <i class="fa-solid fa-x" id="close"></i>
+            </div>
+          </div>
+        </span>
+      </div>
+
+      <div class="page-header-tow">
+        <nav class="main-nav">
+          <a href="../../index.html">Home page</a>
+          <a href="../../showcart.html">Shopping card</a>
+          <a href="../news/news.html">Products</a>
+          <a href="../news/news.html">News</a>
+        </nav>
+        <div class="search">
+          <div class="input">
+            <input
+              type="text"
+              placeholder="Enter your products...!"
+              id="search-input"
+            />
+            <i class="fa fa-search"></i>
+          </div>
+          <div class="shopping-cart">
+            <p class="no-ordered-items">0</p>
+            <i class="icon-cart fa fa-shopping-cart"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="run">
+      <marquee>WELCOME TO MY WEBSITE</marquee>
+    </div>
+    <main class="page-main">
+      <div class="page-main-banner">
+        <img src="../assets/bgimg.jpg" alt="" id="banner" />
+      </div>
+
+      <div class="page-main-menu">
+        <div class="title_1 title">BEST-SELLER</div>
+        <div class="item-1 product">
+          <img src="../assets/chicken2.png" alt="product 1" />
+          <div class="product-detail">
+            <strong class="name">Chicken</strong>
+            <div class="value">99000</div>
+          </div>
+          <div class="add">Thêm ngay</div>
+        </div>
+        <div class="item-2 product">
+          <img
+            class="img-product"
+            src="../assets/noodle2.png"
+            alt="product 2"
+          />
+          <div class="product-detail">
+            <strong class="name">Noodles</strong>
+            <div class="value">68000</div>
+          </div>
+          <div class="add">Thêm ngay</div>
+        </div>
+        <div class="item-3 product">
+          <img class="img-product" src="../assets/muc.jpg" alt="product 3" />
+          <div class="product-detail">
+            <strong class="name">Squid</strong>
+            <div class="value">157000</div>
+          </div>
+          <div class="add">Thêm ngay</div>
+        </div>
+        <div class="item-4 product">
+          <img class="img-product" src="../assets/banhmi.jpg" alt="product 4" />
+          <div class="product-detail">
+            <strong class="name">Bread</strong>
+            <div class="value">60000</div>
+          </div>
+          <div class="add">Thêm ngay</div>
+        </div>
+        <div class="item-5 product">
+          <img class="img-product" src="../assets/bo.jpg" alt="product 5" />
+          <div class="product-detail">
+            <strong class="name">Steak</strong>
+            <div class="value">450000</div>
+          </div>
+          <div class="add">Thêm ngay</div>
+        </div>
+        <div class="item-6 product">
+          <img class="img-product" src="../assets/bone.jpg" alt="product 6" />
+          <div class="product-detail">
+            <strong class="name">Cown</strong>
+            <div class="value">388000</div>
+          </div>
+          <div class="add">Thêm ngay</div>
+        </div>
+        <div class="item-7 product">
+          <img class="img-product" src="../assets/chaca.jpg" alt="product 7" />
+          <div class="product-detail">
+            <strong class="name">Korean</strong>
+            <div class="value">98000</div>
+          </div>
+          <div class="add">Thêm ngay</div>
+        </div>
+
+        <div class="item-8 product">
+          <img
+            class="img-product"
+            src="../assets/comsuon.jpeg"
+            alt="product 8"
+          />
+          <div class="product-detail">
+            <strong class="name">Com suon</strong>
+            <div class="value">95000</div>
+          </div>
+          <div class="add">Thêm ngay</div>
+        </div>
+        <div class="title_2 title">HOT-SELLER</div>
+        <div class="item-9 product">
+          <img
+            class="img-product"
+            src="../assets/france1.jpg"
+            alt="product 9"
+          />
+          <div class="product-detail">
+            <strong class="name">France</strong>
+            <div class="value">250000</div>
+          </div>
+          <div class="add">Thêm ngay</div>
+        </div>
+        <div class="item-10 product">
+          <img class="img-product" src="../assets/kem.jpg" alt="product 10" />
+          <div class="product-detail">
+            <strong class="name">Ice cream</strong>
+            <div class="value">49000</div>
+          </div>
+          <div class="add">Thêm ngay</div>
+        </div>
+
+        <div class="item-11 product">
+          <img class="img-product" src="../assets/sushi.png" alt="product 11" />
+          <div class="product-detail">
+            <strong class="name">Shushi</strong>
+            <div class="value">300000</div>
+          </div>
+          <div class="add">Thêm ngay</div>
+        </div>
+        <div class="item-12 product">
+          <img class="img-product" src="../assets/trấu.webp" alt="product 12" />
+          <div class="product-detail">
+            <strong class="name">Milk Tea</strong>
+            <div class="value">50000</div>
+          </div>
+          <div class="add">Thêm ngay</div>
+        </div>
+        <div class="item-13 product">
+          <img
+            class="img-product"
+            src="../assets/lobster.jpg"
+            alt="product 13"
+          />
+          <div class="product-detail">
+            <strong class="name">Lobster</strong>
+            <div class="value">1050000</div>
+          </div>
+          <div class="add">Thêm ngay</div>
+        </div>
+        <div class="item-14 product">
+          <img class="img-product" src="../assets/miy.jpeg" alt="product 14" />
+          <div class="product-detail">
+            <strong class="name">Pasta</strong>
+            <div class="value">88000</div>
+          </div>
+          <div class="add">Thêm ngay</div>
+        </div>
+        <div class="item-15 product">
+          <img class="img-product" src="../assets/miy.jpeg" alt="product 15" />
+          <div class="product-detail">
+            <strong class="name">Pasta</strong>
+            <div class="value">98000</div>
+          </div>
+          <div class="add">Thêm ngay</div>
+        </div>
+        <div class="item-16 product">
+          <img class="img-product" src="../assets/miy.jpeg" alt="product 16" />
+          <div class="product-detail">
+            <strong class="name">Pasta</strong>
+            <div class="value">188000</div>
+          </div>
+          <div class="add">Thêm ngay</div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="logo-infooter">
+        <img src="../assets/logo.png" alt="" />
+      </div>
+      <div class="first-content">
+        <h2>CÔNG TY 2 THÀNH VIÊN FLAVORFOOD</h2>
+        <p>Địa chỉ: Tầng 5, Vincom Xuan Khanh, Cái Khế, Ninh Kiều, Cần Thơ.</p>
+        <p>Điện thoại: (035) 27542781</p>
+        <p>Tổng đài: 1900-1199 Mã số thuế: 098002383</p>
+        <p>Ngày cấp: 1/10/2024</p>
+        <p>Nơi cấp: Cục Thuế Hồ Chí Minh Hộp thư góp ý:abc@flavorfood.com.vn</p>
+      </div>
+
+      <div class="second-content">
+        <div class="order">
+          <img src="../assets/contact.png" alt="" />
+        </div>
+        <p>Liên hệ</p>
+        <p>Chính sách và quy định chung</p>
+        <p>Chính sách thanh toán khi đặt hàng</p>
+        <p>Chính sách hoạt động</p>
+        <p>Thông tin vận chuyển và giao nhận</p>
+        <p>Chính sách hoạt động</p>
+        <p>Chính sách bảo mật thông tin</p>
+        <p>Thông tin đăng ký giao dịch chung</p>
+        <p>Hướng dẫn đặt phần ăn</p>
+      </div>
+
+      <div class="third-content">
+        <h3>HÃY KẾT NỐI VỚI CHÚNG TÔI</h3>
+        <p>
+          <i class="fa-brands fa-facebook"></i>
+          Facebook
+        </p>
+        <p><i class="fa-regular fa-envelope"></i> Email</p>
+
+        <div class="anh1">
+          <img src="../assets/anh1.png" />
+        </div>
+        <div class="draw"></div>
+        <div class="mix-logo">
+          <h3>TẢI ỨNG DỤNG ĐẶT HÀNG VỚI NHIỀU ƯU ĐÃI HƠN</h3>
+          <img src="../assets/google.png" alt="" />
+          <img src="../assets/appstore.png" alt="" />
+        </div>
+      </div>
+
+      <div class="last-footer">
+        <p><b>© 2024 FlavorFood Viet Nam</b></p>
+      </div>
+    </footer>
+
+    <script>
+      $(document).ready(function () {
+        let geth1 = document.querySelector(".title_1");
+        let geth2 = document.querySelector(".title_2");
+
+        setInterval(function () {
+          setTimeout(function () {
+            geth1.style.color = "#87A922";
+          }, 1000);
+          setTimeout(function () {
+            geth1.style.color = "#FCDC2A";
+          }, 2000);
+          setTimeout(function () {
+            geth1.style.color = "#FF8E8F";
+          }, 3000);
+
+          setTimeout(function () {
+            geth1.style.color = "#F08080";
+          }, 3000);
+
+          setTimeout(function () {
+            geth1.style.color = "#7CFC00";
+          }, 3000);
+        }, 3000);
+
+        setInterval(function () {
+          setTimeout(function () {
+            geth2.style.color = "#DEB887";
+          }, 1000);
+          setTimeout(function () {
+            geth2.style.color = "#FF7F50";
+          }, 2000);
+          setTimeout(function () {
+            geth2.style.color = "#8B008B";
+          }, 3000);
+          setTimeout(function () {
+            geth2.style.color = "#696969";
+          }, 3000);
+          setTimeout(function () {
+            geth2.style.color = "#FF00FF";
+          }, 3000);
+        }, 3000);
+
+        $("#giftImg").click(function () {
+          $("#message").show();
+          $("#giftImg").hide();
+        });
+
+        $("#close").click(function () {
+          $("#message").hide();
+          $("#bird").show();
+        });
+      });
+    </script>
+
+    <script src="../../cart.js"></script>
+
+    <script>
+      const prices = document.querySelectorAll(".value");
+      prices.forEach((item) => {
+        item.innerText = Number(item.innerText).toLocaleString("de-DE", {
+          style: "currency",
+          currency: "VND",
+        });
+      });
+      window.addEventListener("load", addEventToAllCartButtons, false);
+    </script>
+  </body>
+</html>

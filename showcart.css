@@ -1,0 +1,45 @@
+.container-items-cart {
+    margin: 10px auto;
+    width: 90%;
+}
+
+.list-items {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.list-head th {
+    background-color:#e31840 ; 
+    border: 1px solid black;
+    padding: 10px 3px;
+}
+
+:is(.list-foot, .list-body) :is(td, th) {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.list-body tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+.list-foot tr td {
+    text-align: center;
+    font-weight: bold;
+}
+
+.list-foot tr td:first-child {
+    text-align: right;
+    padding-right: 10px;
+}
+
+
+.list-items td, .list-items th {
+    text-align: center;
+}
+
+.title-cart-list {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

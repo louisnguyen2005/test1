@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./log.css" />
+
+    <link rel="icon" href="../assets/reset-password.png" type="image/png" />
+    <title>Log-in</title>
+  </head>
+  <body>
+    <div class="log">
+      <div class="login">
+        <a href="./login-out.html" id="login-link"><p>Đăng nhập</p></a>
+      </div>
+      <div class="move-email"><label for="email">Email</label></div>
+
+      <div class="email">
+        <input
+          type="email"
+          tabindex="1"
+          placeholder="Enter your email..."
+          id="email"
+        />
+      </div>
+
+      <div id="check-email" class="check-email"></div>
+
+      <div class="pas">
+        <div class="move-password"><label for="password">Password</label></div>
+
+        <div class="password" >
+          <input
+            type="password"
+            placeholder="Enter your password..."
+            id="password"
+            tabindex="2"
+          />
+          <div class="togglePassword" id="togglePassword">
+            <img src="../assets/view.png"/>
+          </div>
+        </div>
+
+        <div class="check-pas" id="check-pas"></div>
+      </div>
+
+      <div class="regis">
+        <a href="../login-out.html">Register here!</a>
+        <img src="../assets/regis.png" />
+      </div>
+    </div>
+  </body>
+  <script src="./log.js"></script>
+</html>

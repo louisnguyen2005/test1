@@ -1,0 +1,97 @@
+
+
+.add{
+    background-image: linear-gradient(130deg, violet, blue, violet, blue);
+    transition: all 0.4s ease;
+}
+
+
+.box{
+    transform: translateX(-60%);
+   
+    margin-top: 2.2rem;
+
+}
+
+
+
+
+.right-icons .open {
+
+    cursor: pointer;
+  }
+
+  .box img {
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+  }
+
+  .box img:hover{
+    width: 5.2rem;
+    height: 5.2rem;
+  }
+  #bird {
+    display: none;
+    position: relative;
+    bottom: 2rem;
+  }
+
+  #message {
+    display: none;
+    background-color: #fff;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    top: 1rem;
+    right: 1.15rem;
+    width: 10rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(130deg,rgb(64, 241, 135), rgb(104, 244, 244),rgb(61, 233, 130) , rgb(104, 244, 244),rgb(245, 95, 195) );
+  }
+
+  #message p {
+    margin: 0;
+    font-weight: bold;
+   
+  }
+  #message img{
+    width: 3rem;
+    height: 3rem;
+margin-left: 3.5rem;
+  }
+
+  #close {
+    position: absolute;
+    top: 0.9rem;
+    right: 5px;
+    cursor: pointer;
+    color: #086ba4;
+  }
+
+  #close i{
+    font-weight: bold;
+    font-size: large;
+  }
+
+  .fa-x:before {
+    content: "\58";
+    font-size: larger;
+    font-weight: 900;
+    position: relative;
+    bottom: 0.6rem;
+
+}
+
+
+.slogan h1{
+ position: relative;
+ right: 6rem;
+}
+.search{
+  transform: translateY(-10%);
+}
+
+
+

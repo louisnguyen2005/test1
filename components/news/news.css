@@ -1,17 +1,48 @@
 
-article{
-    padding: 1rem;
-    display: flex;
-    justify-content: space-evenly; 
+.page-main-news{
+    grid-area: 
+    'new_1'
+    'new_2'
+    'new_3'
+    'new_4'
+    'new_5'
+    'new_6'
+    ;
+    display: grid;
+    gap: 20px;
+   background-color: rgb(73, 255, 246);
 }
 
-.checksize img{
-    width: 200px;
-    height: 150px;
-
-    margin-bottom: 50px;
+.page-main-news>div{
+    padding: 5rem 0;
+    background-color: rgb(189 255 224);
 }
-
+/* banner....... */
+.page-main-banner img{
+    height: 30rem;
+}
+.page-main-banner{
+    margin-bottom: 6rem;
+}
+.newss img{
+    width: 30rem;
+    height: 15rem;
+    object-fit: contain;
+    flex: 3;
+}
+.newss{ 
+justify-content: space-evenly;
+display: flex;
+max-height: 34rem;
+}
+.contentAll{
+    flex: 6;
+}
+.contentAll p{
+    font-size: 30px;
+    font-weight: 400;
+    color: rgb(124, 79, 22);
+}
 
 
 

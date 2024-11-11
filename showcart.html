@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Show cart items</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./showcart.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./components/news/news.css" />
+    <link rel="icon" href="./components/assets/bgimg.jpg" type="image/png" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Slick Slider CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6f86dd0dee.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header-one">
+        <img src="./components/assets/logo.png" />
+
+        <div class="slogan">
+          <h1><b>brings you the best</b></h1>
+        </div>
+        <span class="right-icons">
+          <div class="user-auth">
+            <a href="./components/log/login.html">Register</a>
+            <span class="beween"><p>/</p></span>
+            <a href="./components/log/login.html">Log-in</a>
+            <div class="icon-log">
+              <a href="./components/log/login.html">
+                <i class="fa fa-user-circle"></i
+              ></a>
+            </div>
+          </div>
+        </span>
+      </div>
+
+      <div class="page-header-tow">
+        <nav class="main-nav">
+          <a href="./index.html">Home page</a>
+          <a href="./showcart.html">Shopping card</a>
+          <a href="./components/news/news.html">Products</a>
+          <a href="./components/news/news.html">News</a>
+        </nav>
+        <div class="search">
+          <div class="input">
+            <input
+              type="text"
+              placeholder="Enter your products...!"
+              id="search-input"
+            />
+            <i class="fa fa-search"></i>
+          </div>
+          <div class="shopping-cart">
+            <p class="no-ordered-items">0</p>
+            <i class="icon-cart fa fa-shopping-cart"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container-items-cart">
+      <h1 class="title-cart-list">Shopping cart list</h1>
+
+      <table class="list-items">
+        <thead class="list-head"></thead>
+        <tbody class="list-body"></tbody>
+        <tfoot class="list-foot"></tfoot>
+      </table>
+    </main>
+
+    <footer>
+      <div class="main-contents">
+        <div class="logo-infooter">
+          <img src="./components/assets/logo.png" alt="" />
+        </div>
+
+        <div class="first-content">
+          <h2>CÔNG TY 2 THÀNH VIÊN FLAVORFOOD</h2>
+          <p>
+            Địa chỉ: Tầng 5, Vincom Xuan Khanh, Cái Khế, Ninh Kiều, Cần Thơ.
+          </p>
+          <p>Điện thoại: (035) 27542781</p>
+          <p>Tổng đài: 1900-1199 Mã số thuế: 098002383</p>
+          <p>Ngày cấp: 1/10/2024</p>
+          <p>
+            Nơi cấp: Cục Thuế Hồ Chí Minh Hộp thư góp ý:abc@flavorfood.com.vn
+          </p>
+        </div>
+
+        <div class="second-content">
+          <div class="order">
+            <img src="./components/assets/contact.png" alt="" />
+          </div>
+          <p>Liên hệ</p>
+          <p>Chính sách và quy định chung</p>
+          <p>Chính sách thanh toán khi đặt hàng</p>
+          <p>Chính sách hoạt động</p>
+          <p>Thông tin vận chuyển và giao nhận</p>
+          <p>Chính sách hoạt động</p>
+          <p>Chính sách bảo mật thông tin</p>
+          <p>Thông tin đăng ký giao dịch chung</p>
+          <p>Hướng dẫn đặt phần ăn</p>
+        </div>
+
+        <div class="third-content">
+          <h3>HÃY KẾT NỐI VỚI CHÚNG TÔI</h3>
+          <p>
+            <i class="fa-brands fa-facebook"></i>
+            Facebook
+          </p>
+          <p><i class="fa-regular fa-envelope"></i> Email</p>
+          <div class="anh1">
+            <img src="./components/assets/anh1.png" />
+          </div>
+          <div class="draw"></div>
+          <div class="mix-logo">
+            <h3>TẢI ỨNG DỤNG ĐẶT HÀNG VỚI NHIỀU ƯU ĐÃI HƠN</h3>
+            <img src="./components/assets/google.png" alt="" />
+            <img src="./components/assets/appstore.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="last-footer">
+        <p><b>© 2024 FlavorFood Viet Nam</b></p>
+      </div>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script>
+      window.addEventListener("load", showCart, false);
+    </script>
+    <script src="cart.js"></script>
+
+    <script>
+      const prices = document.querySelectorAll(".value");
+      prices.forEach((item) => {
+        item.innerText = Number(item.innerText).toLocaleString("de-DE", {
+          style: "currency",
+          currency: "VND",
+        });
+      });
+      window.addEventListener("load", addEventToAllCartButtons, false);
+    </script>
+  </body>
+</html>
