@@ -55,17 +55,17 @@
         </span>
       </div>
       <div class="page-header-tow">
-        
+        <div class="page-header-tow2">
           <nav class="main-nav">
             <a href="./index.html">Home page</a>
-            <a href="./showcart.html">Shopping card</a>
+            <a href="./showcart.html">Shopping cart</a>
             <a href="./components/news/news.html">Products</a>
             <a href="./components/news/news.html">News</a>
           </nav>
           <div id="mobile-menu" class="mobile-menu-btn">
             <i class="menu-icon fas fa-bars"></i>
           </div>
-        
+        </div>
 
         <div class="search">
           <div class="input">
@@ -397,22 +397,20 @@
       window.addEventListener("load", addEventToAllCartButtons, false);
     </script>
     <script>
-      let k = document.querySelector(" .main-nav");
-      let mobile = document.querySelector(".mobile-menu-btn");
-      let headerHeight = k.clientHeight;
+      let mainNav = document.querySelector(".main-nav");
+      let mobileMenuBtn = document.querySelector(".mobile-menu-btn");
 
-      mobile.onclick = function () {
-        let isClosed = k.clientHeight === 0;
-        k.style.height = isClosed ? "auto" : null;
+      // Toggle the main navigation menu on mobile
+      mobileMenuBtn.onclick = function () {
+        let isClosed = mainNav.clientHeight === 0;
+        mainNav.style.height = isClosed ? "auto" : "0";
       };
 
-      // Close menu when clicking on a link
+      // Collapse menu after clicking a link
       let menuItems = document.querySelectorAll(".main-nav a");
       menuItems.forEach((menuItem) => {
-        menuItem.onclick = function (e) {
-          if (!menuItem.nextElementSibling) {
-            k.style.height = null;
-          }
+        menuItem.onclick = function () {
+          mainNav.style.height = "0";
         };
       });
     </script>
